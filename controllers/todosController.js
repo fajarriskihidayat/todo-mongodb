@@ -179,7 +179,7 @@ const deleteAllTodo = async (req, res) => {
       data: {
         deleted: todo.deletedCount,
       },
-      message: "Todo Deleted Successfully",
+      message: "Delete All Todo Successfully",
     });
   } catch (error) {
     res.status(500).json({
