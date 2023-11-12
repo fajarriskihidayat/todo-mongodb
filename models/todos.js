@@ -3,12 +3,11 @@ const mongoose = require("mongoose");
 const todosSchema = new mongoose.Schema({
   value: String,
   status: {
-    type: String,
-    enum: ["Active", "Completed"],
-    default: "Active",
+    type: Boolean,
+    default: false,
   },
-  user_id: {
-    type: mongoose.ObjectId,
+  username: {
+    type: String,
     ref: "User",
   },
 });
