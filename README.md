@@ -1,3 +1,7 @@
+# Link Deploy API
+
+    https://crabby-sweater-worm.cyclic.app/
+
 # Rest API
 
 The REST API to the example web is described below.
@@ -30,7 +34,6 @@ The REST API to the example web is described below.
         "message": "Get All Data"
     }
 
-
 ### Request GET BY ID
 
 `GET /users/:id`
@@ -47,7 +50,6 @@ The REST API to the example web is described below.
         },
         "message": "Get User By Id"
     }
-
 
 ### Request POST Register
 
@@ -71,7 +73,6 @@ The REST API to the example web is described below.
         },
         "message": "User Created Successfully"
     }
-
 
 ### Request PUT
 
@@ -97,8 +98,7 @@ The REST API to the example web is described below.
         "message": "User Updated Successfully"
     }
 
-
-### Request POST LOGIN 
+### Request POST LOGIN
 
 `DELETE /users/login`
 
@@ -107,17 +107,16 @@ The REST API to the example web is described below.
         "password": "123"
     }
 
-### Response POST LOGIN 
+### Response POST LOGIN
 
     {
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhamFyMTAiLCJpYXQiOjE2OTk3OTkzMTR9.EPLcPfKm_3Wy25Z9jOH5hiJiWKTJvy3M7G2Gnf-RbnQ",
         "message": "Login Successfully"
     }
 
-
 ## Endpoint Todos
 
-### Request GET ALL 
+### Request GET ALL
 
 `GET /todos/:username`
 
@@ -154,7 +153,6 @@ The REST API to the example web is described below.
         "message": "Get Todos By Username"
     }
 
-
 ### Request DETAIL TODO
 
 `GET /todos/detail/:id`
@@ -175,7 +173,6 @@ The REST API to the example web is described below.
         },
         "message": "Detail Todo"
     }
-
 
 ### Request POST
 
@@ -199,7 +196,6 @@ The REST API to the example web is described below.
         "message": "Todo Created Successfully"
     }
 
-
 ### Request PUT VALUE
 
 `PUT /todos/:id`
@@ -220,7 +216,6 @@ The REST API to the example web is described below.
         },
         "message": "Todo Updated Successfully"
     }
-
 
 ### Request PUT STATUS
 
@@ -243,7 +238,6 @@ The REST API to the example web is described below.
         "message": "Status Updated Successfully"
     }
 
-
 ### Request DELETE
 
 `DELETE /todos/:id`
@@ -257,7 +251,6 @@ The REST API to the example web is described below.
         "message": "Todo Deleted Successfully"
     }
 
-
 ### Request DELETE ALL TODO
 
 `DELETE /todos/all/:username`
@@ -270,4 +263,3 @@ The REST API to the example web is described below.
         },
         "message": "Delete All Todo Successfully"
     }
-
