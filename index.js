@@ -9,9 +9,13 @@ db.then(() => {
   console.log("Failed connect database");
 });
 
+const rootRouter = require("./routes/index");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+app.use(rootRouter);
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
